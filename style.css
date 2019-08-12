@@ -56,7 +56,7 @@ ul.mynavul {
 
 li.mynavli {
   display: inline;
-  font-size: 10px;   
+  /* font-size: 10px; */   
 }
 
 li.mynavli a {
@@ -121,7 +121,7 @@ li.mynavli a:hover {
       font-size: 1.5vw;   
     }
     .navbarfont {
-      font-size: 2vw;
+      font-size: 1.5vw;
     }
 }
 
