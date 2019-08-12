@@ -4,6 +4,7 @@ body {
   color: #ffffff;
   font-family: verdana; /* took out calibri, it is loading as times new roman on other computers */
   text-align: center;
+  margin: 0; /* needed bc deault will add a space */
 }
 
 p {
@@ -62,7 +63,7 @@ li.mynavli a {
   display: inline-block;
   color: #ffffff;
   text-align: center;
-  padding: 10px 10px; /* padding: top right */
+  padding: 10px; /* padding: top right */
   text-decoration: none;
 }
 
@@ -83,7 +84,7 @@ li.mynavli a:hover {
 .centered {
   text-align: center; /* text to align horizontally */
   width: 100%; /* div to take 100% length of container */
-  position: absolute;
+  position: relative;
   top: 50%; /* start 50% from Top */ 
   left: 0%;
   transform: translate(0%, -50%); /* vertical middle of text line up with Middle of container */
@@ -92,14 +93,14 @@ li.mynavli a:hover {
 .topmain {
   text-align: center; /* text to align horizontally */
   width: 100%;  /* div to take 100% length of container */
-  position: absolute;
+  position: relative;
   top: 40%; 
   left: 0%;
   transform: translate(0%, -50%); /* vertical middle of text line up with Middle of container */
 }
 
 .bottom-left {
-  position: absolute;
+  position: relative;
   bottom: 8px;
   left: 16px;
 }
@@ -117,7 +118,7 @@ li.mynavli a:hover {
       font-size: 2vw;   
     }
     .smallfont {
-      font-size: 1vw;   
+      font-size: 1.5vw;   
     }
     .navbarfont {
       font-size: 14px;
