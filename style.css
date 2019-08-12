@@ -1,0 +1,146 @@
+﻿
+body {
+  background-color: #333333;
+  color: #ffffff;
+  font-family: verdana; /* took out calibri, it is loading as times new roman on other computers */
+  text-align: center;
+}
+
+p {
+  margin: 1vw;
+  padding: 0;
+}
+
+/* Link styles defined below */
+a {
+  display:block; /* so that the margin will work on the <a> tag */
+  margin: 0vw;
+  padding: 0vw;
+}
+
+a:link {
+  color: white;
+  /*background-color: transparent;*/
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  color: white;
+  text-decoration: underline;
+}
+
+
+/* ********************************** */
+/* Class for User List and List Item for Nav Bar */
+/* ********************************** */
+ul.mynavul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #222222;
+  position: fixed; /* to keep nav bar fixed */
+  z-index: 1; /* so that the nave bar stays above all other text */
+  top: 0; /* to keep nav bar at top */
+  width: 100%; /* full width bar */
+}
+
+li.mynavli {
+  display: inline;
+  font-size: 10px;   
+}
+
+li.mynavli a {
+  display: inline-block;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 10px; /* padding: top right */
+  text-decoration: none;
+}
+
+li.mynavli a:hover {
+  color: #aaaaaa;
+}
+
+/* ********************************** */
+/* Class to put text over image */
+/* ********************************** */
+/* This container goes directly around the image */
+.container {
+  position: relative;
+  text-align: center;
+}
+
+/* These are the classes for the text inside the container */
+.centered {
+  text-align: center; /* text to align horizontally */
+  width: 100%; /* div to take 100% length of container */
+  position: absolute;
+  top: 50%; /* start 50% from Top */ 
+  left: 0%;
+  transform: translate(0%, -50%); /* vertical middle of text line up with Middle of container */
+}
+
+.topmain {
+  text-align: center; /* text to align horizontally */
+  width: 100%;  /* div to take 100% length of container */
+  position: absolute;
+  top: 40%; 
+  left: 0%;
+  transform: translate(0%, -50%); /* vertical middle of text line up with Middle of container */
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+/* ********************************** */
+/* Font Sizes */
+/* ********************************** */
+/* this will create different sizes of font classes depending on the screen size */
+/* computer size */
+@media screen and (min-width: 601px) {
+    .largefont {
+      font-size: 7vw; /* text will change size based on window size, always X% (Xvw) of view port width */  
+    }   
+    .mediumfont {
+      font-size: 2vw;   
+    }
+    .smallfont {
+      font-size: 1vw;   
+    }
+    .navbarfont {
+      font-size: 14px;
+    }
+}
+
+/* phone size */
+@media screen and (max-width: 600px) {
+    .largefont {
+      font-size: 7vw;   
+    }   
+    .mediumfont {
+      font-size: 4vw;   
+    }
+    .smallfont {
+      font-size: 3vw;   
+    }
+    .navbarfont {
+      font-size: 10px;
+    }
+    /* this is to remove QR code and text from Mobile */
+    p#onlydesktop {
+      display:none;
+    }
+}
+
