@@ -1,7 +1,7 @@
 ﻿
 body {
-  background-color: #faf8f7;
-  color: #474646;
+  background-color: #FAF6F5;
+  color: #212020;
   font-family: verdana; /* took out calibri, it is loading as times new roman on other computers */
   text-align: center;
   margin: 0; /* needed bc deault will add a space */
@@ -20,13 +20,13 @@ a {
 }
 
 a:link {
-  color: white;
+  color: #212020;
   /*background-color: transparent;*/
   text-decoration: none;
 }
 
 a:visited {
-  color: white;
+  color: #212020;
 }
 
 a:hover {
@@ -34,7 +34,7 @@ a:hover {
 }
 
 a:active {
-  color: white;
+  color: #212020;
   text-decoration: underline;
 }
 
