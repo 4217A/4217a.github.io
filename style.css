@@ -1,7 +1,7 @@
 ﻿
 body {
-  background-color: #333333;
-  color: #ffffff;
+  background-color: #faf8f7;
+  color: #474646;
   font-family: verdana; /* took out calibri, it is loading as times new roman on other computers */
   text-align: center;
   margin: 0; /* needed bc deault will add a space */
