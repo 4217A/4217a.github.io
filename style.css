@@ -123,6 +123,9 @@ li.mynavli a:hover {
     .navbarfont {
       font-size: 12px; /* was 1vw */
     }
+    img{
+      width: 603px;
+    }
 }
 
 /* phone size */
@@ -142,6 +145,9 @@ li.mynavli a:hover {
     /* this is to remove QR code and text from Mobile */
     p#onlydesktop {
       display:none;
+    }
+    img{
+      width: 301.5px;
     }
 }
 
