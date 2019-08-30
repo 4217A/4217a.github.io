@@ -1,0 +1,285 @@
+<!-- 08/29/2019 -->
+<!-- Reference -->
+<!-- YouTube Video: Responsive Bootstrap Website Start To Finish with Bootstrap 4, HTML5 and CSS3 -->
+<!-- By: Drew Ryan -->
+<!-- Link: https://www.youtube.com/watch?v=9cKsq14Kfsw -->
+<!-- Modified and Expanded By: 4217A -->
+
+<!-- Colors: -->
+<!-- Blue #53a3d9 -->
+<!-- Purple #a797ae -->
+<!-- Light Gray #dad9d7 -->
+
+<!-- Accent Colors: -->
+<!-- Orange #ff721c -->
+
+<!-- Libraries Used: -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>4217A Portfolio</title>
+	<!-- Font -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+	<!-- Bootstrap from https://getbootstrap.com/ -->	
+	<link 
+	rel="stylesheet" 
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+	crossorigin="anonymous" />
+	<script 
+	src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+	integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+	crossorigin="anonymous">
+	</script>
+	<script 
+	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
+	integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" 
+	crossorigin="anonymous">
+	</script>
+	<script 
+	src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+	integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
+	crossorigin="anonymous">
+	</script>
+
+	<!-- Local CSS -->	
+	<link href="style.css" rel="stylesheet" />
+
+  </head>
+  <body>
+
+    <!-- Navigation -->
+    <!-- sticky-top so that the bar will disappear after scrolling down -->
+    <!-- container-fluid so it takes up 100% of screen -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+      <div class="container-fluid">
+			<!-- #navbarResponsive will be where the navbar links to -->
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+				<!-- span for navbar icon -->
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<!-- #navbarResponsive dropdown when icon clicked -->
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<!-- ml-auto so navbar will expand automatically on right -->
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a href="#Projects" class="nav-link">Projects</a>
+					</li>
+					<li class="nav-item">
+						<a href="#About" class="nav-link">About</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+    </nav>
+
+	<!--- |||||||||||| -->
+	<!--- Home -->
+	<!--- |||||||||||| -->
+	<div class="carousel">
+		<!-- carousel images-->
+		<div class="carousel-inner">
+			<div class="clickwrap" onclick='window.open("https://unsplash.com/photos/CTivHyiTbFw");')>
+				<div class="carousel-item active">
+					<picture>
+					<source media="(min-width: 576px)" srcset="img/anastasia-taioglou-CTivHyiTbFw-unsplash.jpg" />
+					<source media="(min-width: 0px)" srcset="img/anastasia-taioglou-CTivHyiTbFw-unsplash-long.png" />
+					<img src="img/anastasia-taioglou-CTivHyiTbFw-unsplash.jpg" alt="Home" />
+					</picture>
+				</div>
+				<div class="carousel-caption">
+					<h1 class="display-1">Welcome!</h1>
+					<h3>"Be water, my friend."</h3>
+					<h3>Bruce Lee</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--- |||||||||||| -->
+    <!--- Thank You Jumbotron -->
+	<!--- |||||||||||| -->
+	<div class="container-fluid">
+		<div class="row jumbotron">
+			<div class="col-12">
+				<p class="lead text-center">Thank you for visiting, very grateful for your time.</p>
+			</div>
+		</div>	
+	</div>
+	
+	<!--- |||||||||||| -->
+	<!--- Projects -->
+	<!--- |||||||||||| -->
+	<div class="container-fluid">
+		<div class="row projectsection text-center">
+			<div class="col-12" id="Projects">
+				<h1>Projects</h1>
+				<hr/>
+				<p class="lead text-center">Please take a look around!</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- this is so that cards are all the same height -->
+	<div class="container-fluid">
+		<div class="row">
+
+			<div class="col-md-6 d-flex">
+				<div class="card">  
+					<a href="https://4217a.github.io/web0/" target="_blank">
+						<img class="card-img-top" src="img/Proj1.jpg" alt="Team 1">
+					</a>
+					<div class="card card-body flex-fill">
+						<h3>Project 1</h3>
+						<p>An HTML/CSS webpage with a responsive layout that changes from desktop to mobile.</p>
+						<a href="https://4217a.github.io/web0/" target="_blank" class="btn btn-primary mt-auto">Visit</a>
+					</div>
+			  	</div>
+			</div>
+
+			<div class="col-md-6 d-flex">
+				<div class="card">  
+					<a href="https://4217a.github.io/game0/" target="_blank">
+						<img class="card-img-top" src="img/Proj2.jpg" alt="Team 2">
+					</a>
+					<div class="card card-body flex-fill">
+						<h3>Project 2</h3>
+						<p>A delightful JavaScript game with three levels of increasing difficulty.</p>
+						<p>(desktop only - spacebar to start!)</p>
+						<a href="https://4217a.github.io/game0/" target="_blank" class="btn btn-primary mt-auto">Visit</a>
+					</div>
+				</div>
+			</div>
+	
+			<div class="col-md-6 d-flex">
+				<div class="card">  
+					<a href="https://4217a.github.io/cssgrid0/" target="_blank">
+						<img class="card-img-top" src="img/Proj3.jpg" alt="Team 3">
+					</a>
+					<div class="card card-body flex-fill">
+						<h3>Project 3</h3>
+						<p>A far out website that uses CSS Grid to provide a responsive layout.</p>
+						<a href="https://4217a.github.io/game0/" target="_blank" class="btn btn-primary mt-auto">Visit</a>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="col-md-6 d-flex">
+				<div class="card">  
+					<a href="https://4217a.github.io/js0/" target="_blank">
+						<img class="card-img-top" src="img/Proj4.jpg" alt="Team 3">
+					</a>
+					<div class="card card-body flex-fill">
+						<h3>Project 4</h3>
+						<p>A weight converter that uses JavaScript and the CSS Bootstrap framework.</p>
+						<a href="https://4217a.github.io/js0/" target="_blank" class="btn btn-primary mt-auto">Visit</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+
+	<!--- |||||||||||| -->
+    <!--- About Jumbotron -->
+	<!--- |||||||||||| -->
+	<br/>
+	<div class="container-fluid">
+			<div class="row jumbotron">
+				<div class="col-12 text-center" id="About">
+					<!--- lead is lightweight text -->
+					<h1>About</h1>
+					<p class="lead">Bachelor of Science in Engineering</p> 
+					<p class="lead">Artist / Designer</p> 
+					<p class="lead">Developer</p> 
+				</div>
+			</div>	
+		</div>
+
+
+	<!--- |||||||||||| -->
+	<!--- Bonus -->
+	<!--- |||||||||||| -->
+	<div class="carousel">
+		<div class="carousel-inner">
+			<div class="clickwrap" onclick='window.open("https://www.pexels.com/photo/white-lighthouse-near-body-of-water-746486/");')>
+				<div class="carousel-item active">
+					<picture>
+						<source media="(min-width: 576px)" srcset="img/architecture-beach-clouds-746486.jpg" />
+						<source media="(min-width: 0px)" srcset="img/architecture-beach-clouds-746486-long.png" />
+						<img src="img/architecture-beach-clouds-746486.jpg" alt="Home" />
+					</picture>
+					<div class="carousel-caption" id="Bonus">
+						<br/>
+						<br/>
+						<br/>
+						<h1 class="display-1">Bonus</h1>
+						<h3>Under Construction</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--- |||||||||||| -->
+    <!--- Footer -->
+	<!--- |||||||||||| -->
+	<footer>
+	<div class="container-fluid">
+		<div class="row text-center">
+
+			<div class="col-md-4 clickwrap" onclick='window.open("https://brucelee.com/podcast-blog/2016/7/20/2-be-water-my-friend");')>
+				<p>"Be Water, My Friend.
+					Empty your mind.
+					Be formless, shapeless, like water.
+					You put water into a cup, it becomes the cup.
+					You put water into a bottle, it becomes the bottle.
+					You put it into a teapot, it becomes the teapot.
+					Now water can flow or it can crash.
+					Be water, my friend." - Bruce Lee
+				</p>
+			</div>
+
+			<div class="col-md-4">
+				<hr class="light" />
+				<h2>Thank you for visiting, have a great day!</h2>
+				<hr class="light" />
+			</div>
+	
+			<div class="col-md-4 clickwrap" onclick='window.open("https://www.brainyquote.com/quotes/steve_jobs_416912");')>
+				<p>"A lot of people in our industry 
+					haven't had very diverse experiences. 
+					So they don't have enough dots to connect, 
+					and they end up with very linear solutions 
+				    without a broad perspective on the problem. 
+				    The broader one's understanding of the human experience, 
+				    the better design we will have." - Steve Jobs
+				</p>
+			</div>
+
+			<div class="col-12">
+				<hr class="light-100" />
+				<h5>References</h5>
+				<p>
+				<a href="https://brucelee.com/podcast-blog/2016/7/20/2-be-water-my-friend">Bruce Lee Quote</a>
+				<br/>
+				<a href="https://unsplash.com/photos/CTivHyiTbFw">Top Ocean Image</a>	
+				<br/>
+				<a href="https://www.pexels.com/photo/white-lighthouse-near-body-of-water-746486/">Bottom Ocean Side Image</a>
+				<br/>
+				<a href="https://www.brainyquote.com/quotes/steve_jobs_416912">Steve Jobs Quote</a>
+				</p>
+			</div>
+
+		</div>
+	</div>
+	</footer>
+
+
+</body>
+</html>
