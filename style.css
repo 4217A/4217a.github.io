@@ -83,6 +83,16 @@ body {
   border: 1px solid #53d2d9;
 }
 
+.btn-outline-secondary {
+  margin-top: 1rem !important;
+  border: 1px solid #a797ae;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #a797ae;
+  border: 1px solid #a797ae;
+}
+
 footer {
   background-color: #3f3f3f;
   color: #dad9d7;
