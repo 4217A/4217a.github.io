@@ -7,6 +7,7 @@ const dark = document.getElementById('customSwitch2');
 
 //initialize
 light.checked = true;
+dark.checked = false;
 //console.log(getComputedStyle(document.documentElement).getPropertyValue('--mycolor'));
 document.documentElement.style.setProperty('--mycolor', LIGHT_TEXT);
 document.documentElement.style.setProperty('--mybackgroundcolor', LIGHT_BKGND);
