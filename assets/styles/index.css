@@ -8,9 +8,17 @@ body {
     background-color: var(--mybackgroundcolor);
 }
 
-footer {
-    color: var(--mybackgroundcolor);
-    background-color: var(--mycolor);
+.my_hold_color {
+    color: #292930;
+}
+
+.my_hold_footer {
+    color: #f7f7f7;
+    background-color: #141418;
+}
+
+.my_foot {
+    margin-bottom: 0 !important;
 }
 
 .hello {
