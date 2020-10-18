@@ -8,11 +8,9 @@ body {
     background-color: var(--mybackgroundcolor);
 }
 
-.my_wrapper {    
-    padding-right: 1em;
-    padding-left: 1em;
-    
-    padding-top: 1em;
+footer {
+    color: var(--mybackgroundcolor);
+    background-color: var(--mycolor);
 }
 
 .hello {
@@ -28,8 +26,13 @@ body {
      } 
 } 
 
-.my_top {
-    padding-top: 2em;
+hr {
+    border: 1px dashed var(--mycolor);
+    width: 50%;
+}
+
+h3.first {
+    padding-top: 1em;
 }
 
 .my_bot {
@@ -40,17 +43,22 @@ body {
     padding-top: 1em;
 }
 
-
-hr {
-    border: 1px dashed var(--mycolor);
-    width: 50%;
+.my_top {
+    padding-top: 2em;
 }
 
-h3.first {
+.my_wrapper {    
+    padding-right: 1em;
+    padding-left: 1em;
+    
     padding-top: 1em;
 }
 
-footer {
-    color: var(--mybackgroundcolor);
-    background-color: var(--mycolor);
+.space {
+    padding-top: 7em;
+    padding-bottom: 7em;
+}
+
+.space-bot {
+    padding-bottom: 7em;
 }
