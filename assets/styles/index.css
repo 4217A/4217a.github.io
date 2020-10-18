@@ -1,6 +1,7 @@
 :root {
     --mycolor: #292930;
     --mybackgroundcolor: #f7f7f7;
+    --myheight: '0px';
 }
 
 body {
@@ -19,6 +20,11 @@ body {
 
 .my_foot {
     margin-bottom: 0 !important;
+}
+
+.first_h1 {
+    padding-top: var(--myheight);
+    padding-bottom: var(--myheight);
 }
 
 .hello {
