@@ -1,0 +1,56 @@
+:root {
+    --mycolor: #292930;
+    --mybackgroundcolor: #f7f7f7;
+}
+
+body {
+    color: var(--mycolor);
+    background-color: var(--mybackgroundcolor);
+}
+
+.my_wrapper {    
+    padding-right: 1em;
+    padding-left: 1em;
+    
+    padding-top: 1em;
+}
+
+.hello {
+    animation: fadeInAnimation ease-in 1s;
+}
+
+@keyframes fadeInAnimation { 
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+     } 
+} 
+
+.my_top {
+    padding-top: 2em;
+}
+
+.my_bot {
+    padding-bottom: 2em;
+}
+
+.my_bot_arrow {
+    padding-top: 1em;
+}
+
+
+hr {
+    border: 1px dashed var(--mycolor);
+    width: 50%;
+}
+
+h3.first {
+    padding-top: 1em;
+}
+
+footer {
+    color: var(--mybackgroundcolor);
+    background-color: var(--mycolor);
+}
