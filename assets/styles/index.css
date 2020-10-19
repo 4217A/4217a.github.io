@@ -14,8 +14,9 @@ body {
 }
 
 .my_hold_footer {
-    color: #f7f7f7;
+    color: #b8b8b9;
     background-color: #141418;
+    font-size: 0.9em;
 }
 
 .my_foot {
@@ -42,11 +43,7 @@ body {
 
 hr {
     border: 1px dashed var(--mycolor);
-    width: 50%;
-}
-
-h3.first {
-    padding-top: 1em;
+    width: 30%;
 }
 
 .my_bot {
