@@ -8,10 +8,10 @@ const myHeight = window.innerHeight;
 const firstRow = document.getElementById('my_first_row').clientHeight;
 
 //initialize
-light.checked = true;
-dark.checked = false;
-document.documentElement.style.setProperty('--mycolor', LIGHT_TEXT);
-document.documentElement.style.setProperty('--mybackgroundcolor', LIGHT_BKGND);
+light.checked = false;
+dark.checked = true;
+document.documentElement.style.setProperty('--mycolor', LIGHT_BKGND);
+document.documentElement.style.setProperty('--mybackgroundcolor', LIGHT_TEXT);
 document.documentElement.style.setProperty('--myheight', (((myHeight-firstRow)/2)*.7 +'px'));
 //console.log(myHeight);
 //console.log((myHeight/2)*.8 +'px');
